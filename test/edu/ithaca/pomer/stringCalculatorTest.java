@@ -22,6 +22,11 @@ class stringCalculatorTest {
         assertEquals(-1, myCalc.Add("3,-4"), "should return -1");
         assertEquals(0, myCalc.Add("0,0"), "should return 0");
         assertEquals(-7, myCalc.Add("-3,-4"), "should return -7");
+
+        //Unknown amount of numbers in string
+        assertEquals(-2, myCalc.Add("0,1,-3"), "should return -2");
+        assertEquals(1, myCalc.Add("0,0,0,0,1"), "should return 1");
+        assertEquals(1, myCalc.Add("1,0,0,0,0,0,0"), "should return 1");
     }
 
 }
