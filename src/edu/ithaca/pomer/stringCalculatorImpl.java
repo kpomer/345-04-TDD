@@ -5,7 +5,8 @@ public class stringCalculatorImpl extends stringCalculator{
         int sum = 0;
         if (numbers != "")
         {
-            String[] splitList = numbers.split(",");
+            int stringNum = Integer.parseInt(numbers);
+            sum = sum + stringNum;
         }
 
         return sum;
