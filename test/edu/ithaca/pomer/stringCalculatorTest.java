@@ -17,11 +17,11 @@ class stringCalculatorTest {
         assertEquals(-3, myCalc.Add("-3"), "should return -3");
 
         //Two values in string
-        assertEquals(0, myCalc.Add("0,1"), "should return 1 for an empty string");
-        assertEquals(0, myCalc.Add("5,5"), "should return 10 for an empty string");
-        assertEquals(0, myCalc.Add("3,-4"), "should return -1 for an empty string");
-        assertEquals(0, myCalc.Add("0,0"), "should return 0 for an empty string");
-        assertEquals(0, myCalc.Add("-3,-4"), "should return -7 for an empty string");
+        assertEquals(1, myCalc.Add("0,1"), "should return 1");
+        assertEquals(10, myCalc.Add("5,5"), "should return 10");
+        assertEquals(-1, myCalc.Add("3,-4"), "should return -1");
+        assertEquals(0, myCalc.Add("0,0"), "should return 0");
+        assertEquals(-7, myCalc.Add("-3,-4"), "should return -7");
     }
 
 }

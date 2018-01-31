@@ -5,8 +5,12 @@ public class stringCalculatorImpl extends stringCalculator{
         int sum = 0;
         if (numbers != "")
         {
-            int stringNum = Integer.parseInt(numbers);
-            sum = sum + stringNum;
+            String[] numbersArray = numbers.split(",");
+            for (int i=0; i<numbersArray.length; i++)
+            {
+                int stringNum = Integer.parseInt(numbersArray[i]);
+                sum = sum + stringNum;
+            }
         }
 
         return sum;
