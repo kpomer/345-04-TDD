@@ -29,6 +29,11 @@ class stringCalculatorTest {
         assertEquals(1, myCalc.Add("0,0,0,0,1"), "should return 1");
         assertEquals(1, myCalc.Add("1,0,0,0,0,0,0"), "should return 1");
         assertEquals(0, myCalc.Add("0,0,0,0,0,0"));
+
+        //NewLine Test
+        assertEquals(-7, myCalc.Add("-3\n-4"), "should return -7");
+        assertEquals(-2, myCalc.Add("-3,-4\n5"), "should return -2");
+        assertEquals(-3, myCalc.Add("4\n-3,-4"), "should return -3");
     }
 
 }
