@@ -16,6 +16,7 @@ class stringCalculatorTest {
         assertEquals(1, myCalc.Add("1"), "should return 1");
         assertEquals(-3, myCalc.Add("-3"), "should return -3");
 
+
         //Two values in string
         assertEquals(1, myCalc.Add("0,1"), "should return 1");
         assertEquals(10, myCalc.Add("5,5"), "should return 10");
@@ -27,6 +28,7 @@ class stringCalculatorTest {
         assertEquals(-2, myCalc.Add("0,1,-3"), "should return -2");
         assertEquals(1, myCalc.Add("0,0,0,0,1"), "should return 1");
         assertEquals(1, myCalc.Add("1,0,0,0,0,0,0"), "should return 1");
+        assertEquals(0, myCalc.Add("0,0,0,0,0,0"));
     }
 
 }
