@@ -10,7 +10,9 @@ public class stringCalculatorImpl extends stringCalculator{
         if (numbers != "")
         {
             //split string into array wherever there is a ","
-            String[] numbersArray = numbers.split(",|\n");
+
+            String[] numbersArray = numbers.split("[,\n]");
+
             for (int i=0; i<numbersArray.length; i++)
             {
                 //add each value to the sum
