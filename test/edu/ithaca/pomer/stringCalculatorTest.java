@@ -33,6 +33,7 @@ class stringCalculatorTest {
         //New lines to split up numbers in string
         assertEquals(4, myCalc.Add("1\n3"), "should return 4");
         assertEquals(8, myCalc.Add("1,3\n4"), "should return 8");
+        assertEquals(10, myCalc.Add("2\n5\n3"), "Should return 10");
 
     }
 
